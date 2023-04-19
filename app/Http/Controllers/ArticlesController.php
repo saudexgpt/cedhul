@@ -188,6 +188,13 @@ class ArticlesController extends Controller
 
     public function downloadFile($folder, $file)
     {
-        return response()->download('storage/media/' . $folder . '/' . $file);
+        $file = portalPulicPath() . "/" . $folder . '/' . $file;
+
+        // $headers = array(
+        //     'Content-Type: application/pdf',
+        // );
+
+        return response()->download($file);
+        // return response()->download('storage/media/' . $folder . '/' . $file);
     }
 }
