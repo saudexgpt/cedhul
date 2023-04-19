@@ -188,7 +188,7 @@ class ArticlesController extends Controller
 
     public function downloadFile($folder, $file)
     {
-        $file = portalPulicPath() .  $folder . '/' . $file;
+        $file = portalPulicPath('media/' . $folder . '/' . $file);
 
         // $headers = array(
         //     'Content-Type: application/pdf',
