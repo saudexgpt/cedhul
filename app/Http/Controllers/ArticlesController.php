@@ -186,7 +186,7 @@ class ArticlesController extends Controller
         return response()->json([], 204);
     }
 
-    public function downloadFile($folder, $file)
+    public function downloadFile()
     {
         return view('application');
         // $file = portalPulicPath('media/' . $folder . '/' . $file);
