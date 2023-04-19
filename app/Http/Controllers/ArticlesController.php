@@ -188,6 +188,6 @@ class ArticlesController extends Controller
 
     public function downloadFile($folder, $file)
     {
-        return response()->download('storage/media' . $folder . '/' . $file);
+        return response()->download('storage/media/' . $folder . '/' . $file);
     }
 }
