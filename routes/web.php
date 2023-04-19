@@ -16,5 +16,5 @@ use App\Http\Controllers\ArticlesController;
 */
 
 // Route::get('/{any}', [ApplicationController::class, 'index'])->where('any', '^(?!api).*$');
-Route::get('/{any}', [ArticlesController::class, 'downloadFile']);
+// Route::get('/storage/media/{folder}/{file}', [ArticlesController::class, 'downloadFile']);
 // Route::get('/admin/registration-confirmation/{hash}', 'Auth\LoginController@confirmRegistration')->name('confirm_admin_reg');
