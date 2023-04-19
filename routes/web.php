@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ApplicationController;
+use App\Http\Controllers\ArticlesController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +15,6 @@ use App\Http\Controllers\ApplicationController;
 |
 */
 
-Route::get('/{any}', [ApplicationController::class, 'index'])->where('any', '^(?!api).*$');
-
+// Route::get('/{any}', [ApplicationController::class, 'index'])->where('any', '^(?!api).*$');
+Route::get('/storage/media/{folder}/{file}', [ArticlesController::class, 'downloadFile']);
 // Route::get('/admin/registration-confirmation/{hash}', 'Auth\LoginController@confirmRegistration')->name('confirm_admin_reg');
