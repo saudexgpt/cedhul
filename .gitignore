@@ -3,6 +3,7 @@
 /config/*
 /storage/*.key
 /vendor
+/app/Http/helpers.php
 .env
 .env.backup
 .env.production
